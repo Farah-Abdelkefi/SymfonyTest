@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="701a0500-4afc-4d79-9fa2-1b0b63c115b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20220505130811.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PfeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/EntrepriseFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/PfeFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Entreprise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PFE.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PfeType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/EntrepriseRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PFERepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pfe/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pfe/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/template.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/202e9909-bf6c-4ee4-a720-dffa45801fde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/202e9909-bf6c-4ee4-a720-dffa45801fde.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,17 +180,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="28bgN1DGJG6it0QiOrggJ3dhfix" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/Revision",
+    "last_opened_file_path": "C:/xampp/htdocs/SymfoTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -215,6 +228,11 @@
       <workItem from="1651569220209" duration="539000" />
       <workItem from="1651569779991" duration="23856000" />
       <workItem from="1651611208845" duration="1227000" />
+      <workItem from="1651695669392" duration="401000" />
+      <workItem from="1651696761343" duration="346000" />
+      <workItem from="1651705659573" duration="237000" />
+      <workItem from="1651741915880" duration="2168000" />
+      <workItem from="1651755554407" duration="2969000" />
     </task>
     <servers />
   </component>
@@ -231,6 +249,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

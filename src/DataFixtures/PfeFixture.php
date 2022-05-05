@@ -6,13 +6,15 @@ use App\Entity\PFE;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory as factory ;
+use phpDocumentor\Reflection\Types\Integer;
 
 class PfeFixture extends Fixture
 {
-    public function load(ObjectManager $manager): void
+    public function load(ObjectManager $manager, ): void
     {
-        for (int $i;$i<10;$i++){
         $faker = factory::create();
+        for ( $i =0;$i<10;$i++){
+
         $pfe = new PFE();
         $pfe->setTitle($faker->title )  ;
         $pfe->setStudent($faker->name);

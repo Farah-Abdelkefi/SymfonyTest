@@ -3,14 +3,18 @@
 {% block title %}Hello PfeController!{% endblock %}
 
 {% block body %}
+    {% block for %}
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title"></h5>
+            {{ pfe.getStudent()  }}
+            {{ pfe->getTitle() }}
             <p class="card-text"></p>
 
         </div>
     </div>
+        {% endblock %}
 
 
 {% endblock %}

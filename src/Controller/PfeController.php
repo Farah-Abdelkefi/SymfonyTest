@@ -34,7 +34,9 @@ class PfeController extends AbstractController
     public function index(ManagerRegistry $doctrine){
         $repo = $doctrine->getRepository(PFE::class);
         $pfe=$repo->findAll();
-        $this->render('pfe/index.html.twig');
+        return $this->render('pfe/index.html.twig',[
+            'pfe'=>$pfe
+        ]);
 
     }
 }

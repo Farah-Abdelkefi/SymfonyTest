@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="701a0500-4afc-4d79-9fa2-1b0b63c115b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20220505130811.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PfeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/EntrepriseFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/PfeFixture.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Entreprise.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/PFE.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PfeType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/EntrepriseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/PFERepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pfe/add.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pfe/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/template.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/202e9909-bf6c-4ee4-a720-dffa45801fde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/202e9909-bf6c-4ee4-a720-dffa45801fde.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PfeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PfeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PfeFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PfeFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Entreprise.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Entreprise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pfe/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pfe/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +221,7 @@
       <workItem from="1651696761343" duration="346000" />
       <workItem from="1651705659573" duration="237000" />
       <workItem from="1651741915880" duration="2168000" />
-      <workItem from="1651755554407" duration="2969000" />
+      <workItem from="1651755554407" duration="4222000" />
     </task>
     <servers />
   </component>

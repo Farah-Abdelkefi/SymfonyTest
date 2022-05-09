@@ -4,8 +4,10 @@ namespace App\Form;
 
 use App\Entity\Entreprise;
 use App\Entity\PFE;
-use Doctrine\DBAL\Types\TextType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,7 +18,11 @@ class PfeType extends AbstractType
         $builder
             ->add('title',TextType::class)
             ->add('student',TextType::class)
-            ->add('entreprise',Entreprise::class,)
+            ->add('entreprise', EntityType::class,[
+                'class' => Entreprise::class,
+                'expanded'=> true
+            ])
+            ->add('add', SubmitType::class)
         ;
     }
 

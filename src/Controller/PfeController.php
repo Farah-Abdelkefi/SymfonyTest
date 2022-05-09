@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Entreprise;
 use App\Entity\PFE;
 use App\Form\PfeType;
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,28 +16,30 @@ use Symfony\Component\Routing\Annotation\Route;
     #[Route('/pfe', name: 'app_pfe')]
 class PfeController extends AbstractController
 {
-    #[Route('/add',name: 'addPfe')]
-    public function addPfe (ObjectManager $manager, Request $request): Response
+    #[Route('/add/{id?0}',name: 'addPfe')]
+    public function addPfe (EntityManagerInterface $manager, Request $request, PFE $pfe = null): Response
     {
-        $pfe = new PFE();
+        if (! $pfe ){
+        $pfe = new PFE();}
         $form=$this->createForm(PfeType::class,$pfe);
         $form->handleRequest($request);
         if ($form->isSubmitted() ){
             $manager->persist($pfe);
             $manager->flush();
+            return $this->redirectToRoute('app_pfeindex');
         }
 
 
         return $this->render('pfe/add.html.twig', [
-            'form'=>$form->createView()
+            'form' => $form->createView()
         ]);
     }
     #[Route('/', name : 'index' )]
-    public function index(ManagerRegistry $doctrine){
-        $repo = $doctrine->getRepository(PFE::class);
-        $pfe=$repo->findAll();
+    public function index (ManagerRegistry $doctrine): Response {
+        $repo = $doctrine->getRepository(Entreprise::class);
+        $entreprise =$repo->findAll();
         return $this->render('pfe/index.html.twig',[
-            'pfe'=>$pfe
+            'pfe'=>$entreprise
         ]);
 
     }

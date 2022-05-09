@@ -16,7 +16,7 @@ class PfeFixture extends Fixture
         for ( $i =0;$i<10;$i++){
 
         $pfe = new PFE();
-        $pfe->setTitle($faker->title )  ;
+        $pfe->setTitle($faker->word )  ;
         $pfe->setStudent($faker->name);
         $manager->persist($pfe);}
         $manager->flush();

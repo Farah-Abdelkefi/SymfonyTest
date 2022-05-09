@@ -1,20 +1,32 @@
 {% extends 'template.html.twig' %}
 
-{% block title %}Hello PfeController!{% endblock %}
+{% block title %} PFE {% endblock %}
 
 {% block body %}
-    {% block for %}
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" >
+            <li class="breadcrumb-item active" aria-current="page">Nombres de PFE par entreprise </li>
+        </ol>
+    </nav>
+
+    <!-- cards -->
+<div class="container">
+    <div class="row">
+    {% for message in pfe %}
+
+    <div class="card text-white col-sm-4 m-2 bg-{% if loop.index is odd %}primary {% else%}secondary{%endif%} mb-3 " style="max-width: 18rem;">
+        <div class="card-header"> {{ message.designation}}</div>
         <div class="card-body">
-            <h5 class="card-title"></h5>
-            {{ pfe.getStudent()  }}
-            {{ pfe->getTitle() }}
-            <p class="card-text"></p>
+            <h5 class="card-title"> {{ message.pfe.count }} pfe(s)</h5>
+            <p class="card-text"> </p>
 
         </div>
     </div>
-        {% endblock %}
+
+    {% endfor %}
+        </div>
+        </div>
+
 
 
 {% endblock %}

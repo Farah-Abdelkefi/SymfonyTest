@@ -7,8 +7,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>
-        {% block Title %}
-
+        {% block title %}
+    template
         {% endblock %}
     </title>
     <link rel="stylesheet" href ="{{asset('node_modules/bootswatch/dist/cerulean/bootstrap.min.css')}}" />
@@ -26,10 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="{{path('app_pfeindex')}}">Liste de PFEs <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{path('app_pfe')}}">Liste de PFEs </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{path('app_pfeaddPfe')}}">ajouter un PFE</a>
+                <a class="nav-link" href="{{path('addPfe')}}">ajouter un PFE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{path('stat')}}">Stat</a>
             </li>
         </ul>
 
